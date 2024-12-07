@@ -1,0 +1,69 @@
+
+/* Contattaci Section */
+.contact-section {
+    background-color: #f4f4f4; /* Sfondo chiaro per la sezione */
+    padding: 50px 20px; /* Spaziatura intorno al contenuto */
+    text-align: center; /* Centra il testo */
+    border-radius: 10px; /* Angoli smussati */
+    margin-top: 50px; /* Distanza dalla sezione precedente */
+}
+
+.contact-section h2 {
+    font-size: 2rem; /* Dimensione del titolo */
+    color: #333; /* Colore del testo del titolo */
+    margin-bottom: 20px; /* Distanza dal testo sottostante */
+    font-weight: bold; /* Grassetto per il titolo */
+}
+
+.contact-section p {
+    font-size: 1.2rem; /* Dimensione del testo */
+    color: #555; /* Colore del testo */
+    margin: 0; /* Rimuove il margine del paragrafo */
+}
+
+/* Pulsante WhatsApp */
+.whatsapp-button {
+    text-decoration: none; /* Rimuove la sottolineatura dal link */
+}
+
+.whatsapp-button button {
+    background-color: #25D366; /* Colore di WhatsApp */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px; /* Bordo arrotondato */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+}
+
+/* Effetto hover */
+.whatsapp-button button:hover {
+    background-color: #128C7E; /* Colore più scuro di WhatsApp */
+}
+
+/* Pulsante Chiama */
+.call-button {
+    text-decoration: none; /* Rimuove la sottolineatura dal link */
+}
+
+.call-button button {
+    background-color: #25D366; /* Colore verde simile a WhatsApp */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px; /* Bordo arrotondato */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+    margin-bottom: 20px;
+}
+
+/* Effetto hover */
+.call-button button:hover {
+    background-color: #128C7E; /* Colore più scuro di WhatsApp */
+}

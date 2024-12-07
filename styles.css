@@ -1,0 +1,20 @@
+@import url('css/general.css');
+@import url('css/header.css');
+@import url('css/hero.css');
+@import url('css/info-section.css');
+@import url('css/video-section.css');
+@import url('css/gallery-section.css');
+@import url('css/contattaci-section.css');
+@import url('css/footer.css');
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .header, .info-section, .gallery {
+        flex-direction: column;
+    }
+    .card, .photo {
+        flex: 1 1 100%;
+    }
+}
+

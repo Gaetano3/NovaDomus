@@ -1,0 +1,41 @@
+
+/* Sezione Video */
+.video-section {
+    margin-top: 40px; /* Distanza dalla sezione precedente */
+    padding: 20px;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Contenitore del video */
+.video-container {
+    max-width: 100%;
+    margin: 0 auto; /* Centra il video */
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+/* iframe che contiene il video */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsività: adattare la larghezza del video */
+@media (max-width: 768px) {
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+

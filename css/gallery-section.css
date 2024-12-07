@@ -1,0 +1,101 @@
+
+/* Sezione Gallery */
+.gallery-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #6e6b6b48;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Spaziatura tra righe */
+}
+
+.gallery-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Contenitore foto con etichetta */
+.photo-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Etichetta */
+.label {
+    position: absolute;
+    top: 10px; /* Posiziona sopra l'immagine */
+    background-color: rgba(0, 0, 0, 0.7); /* Sfondo semi-trasparente */
+    color: #fff; /* Colore del testo */
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    z-index: 1; /* Assicurati che sia sopra l'immagine */
+    white-space: nowrap;
+}
+
+/* Immagini */
+.photo-wrapper img {
+    width: 100%; /* Imposta la larghezza al 100% del contenitore */
+    height: 250px; /* Imposta un'altezza fissa per uniformare tutte le immagini */
+    object-fit: contain; /* Adatta l'immagine senza distorcerla */
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Due colonne */
+    gap: 10px; /* Spaziatura tra colonne */
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    border-radius: 15px; /* Angoli smussati per il bordo */
+    border: 2px solid #ddd; /* Bordi sottili di separazione */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Effetto ombra per l'effetto 3D */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transizione per l'hover */
+}
+
+
+/* Lightbox container */
+.lightbox {
+    display: none; /* Nasconde il lightbox per impostazione predefinita */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Sfondo scuro */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Immagine nel lightbox */
+.lightbox img {
+    max-width: 90%; /* Non supera il 90% della finestra */
+    max-height: 90%; /* Non supera il 90% della finestra */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Pulsante di chiusura */
+#lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}

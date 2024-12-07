@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@0;1&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Nova Domus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="resources/logo.png" alt="Logo Nova Domus" class="logo">
+            <span class="company-name">Nova Domus</span>
+        </div>
+        <button class="contact-button" onclick="scrollToFooter()">Contattaci</button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nova Domus</h1>
+            <h2>di Pietro Parisi</h2>
+            <button class="explore-button" onclick="scrollToSection('info-section')">
+                Esplora
+                <span class="arrow">↓</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info-section" class="info-section">
+        <div class="card">
+            <h2>Chi Siamo</h2>
+            <p>La Nova Domus esegue lavori interni ed esterni tra cui ristrutturazioni totali di abitazioni o parti di esse (bagni, cucine, camere, terrazze, tetti e tanto altro) in collaborazione con diversi professionisti del settore tra cui elettricisti, idraulici, falegnami, fabbri, leader di eccellenza.
+                La nostra esperienza al tuo servizio per ristrutturazioni e costruzioni di alta qualità.</p>
+        </div>
+        <div class="card">
+            <h2>Servizi</h2>
+            <p>La Nova Domus offre:</p>
+            <p>-Sopralluogo gratuito, indicato per la visione dello stato di fatto degli ambienti e per la misurazione delle superfici.</p>
+            <p>-Preventivo <b>gratuito</b>.</p>
+            <p>-Consulenza ed assistenza nella scelta dei materiali mirando all'ideale rapporto qualità-prezzo.</p>
+        </div>
+        <div class="card">
+            <h2>Perché Sceglierci</h2>
+            <p>Estrema disponibilità, affidabilità, qualità e cura nei dettagli sono il fulcro del nostro lavoro. </p>
+        </div>
+    </section>
+
+    <!-- Sezione Video -->
+    <section class="video-section">
+        <h2>Guarda il nostro video</h2>
+        
+        <!-- Codice di incorporamento del video da Facebook -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BqaDqbh8Q_A?si=kRY4cDv209kUM2ZZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h2>Prima e Dopo</h2>
+        <div class="gallery">
+            <div class="photo">
+                <div class="photo-wrapper">
+                    <span class="label">Prima</span>
+                    <img src="resources/prima_01.jpg" alt="Prima" data-full="resources/prima_01.jpg">
+                </div>
+                <div class="photo-wrapper">
+                    <span class="label">Dopo</span>
+                    <img src="resources/dopo_01.jpg" alt="Dopo" data-full="resources/dopo_01.jpg">
+                </div>
+            </div>
+            <div class="photo">
+                <div class="photo-wrapper">
+                    <span class="label">Prima</span>
+                    <img src="resources/prima_02.jpg" alt="Prima" data-full="resources/prima_02.jpg">
+                </div>
+                <div class="photo-wrapper">
+                    <span class="label">Dopo</span>
+                    <img src="resources/dopo_02.jpg" alt="Dopo" data-full="resources/dopo_02.jpg">
+                </div>
+            </div>
+            <div class="photo">
+                <div class="photo-wrapper">
+                    <span class="label">Prima</span>
+                    <img src="resources/prima_03.jpg" alt="Prima" data-full="resources/prima_03.jpg">
+                </div>
+                <div class="photo-wrapper">
+                    <span class="label">Dopo</span>
+                    <img src="resources/dopo_03.jpg" alt="Dopo" data-full="resources/dopo_03.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+        <span id="lightbox-close">&times;</span>
+    </div>
+    
+    <!-- Contattaci Section -->
+    <section class="contact-section">
+        <h2>Contattaci</h2>
+        <p>Prenota la tua consulenza gratuita al 392 489 5616</p>
+
+        <!-- Pulsante Chiama -->
+        <a href="tel:+3924895616" class="call-button">
+            <button>Chiama Ora</button>
+        </a>
+
+        <!-- Pulsante WhatsApp -->
+        <a href="https://wa.me/3924895616?text=Ciao%2C%20ho%20bisogno%20di%20una%20consulenza" target="_blank" class="whatsapp-button">
+            <button>Contattaci su WhatsApp</button>
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-logo">
+            <img src="resources/logo.png" alt="Logo Nova Domus" class="logo">
+            <div class="logo">Impresa Edile Nova Doums SRL di Pietro Parisi</div>
+            <p>Via Bari, 63, Giovinazzo (BA)</p>
+            <p>Tel: +39 392 489 5616</p>
+            <p>E-mail: parisipietro31@gmail.com</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/NovaDomusDiPietroParisi" target="_blank">
+                <img src="resources/facebook_icon.png" alt="Facebook" class="social-icon">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

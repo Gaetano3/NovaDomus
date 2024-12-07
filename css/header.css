@@ -1,0 +1,44 @@
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spaziatura tra il logo e il nome */
+}
+
+.logo {
+    height: 80px; /* Altezza del logo, personalizza secondo necessità */
+    width: auto; /* Mantiene proporzioni corrette */
+}
+
+.company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.contact-button {
+    background-color: #f04f2302; /* Colore del pulsante */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #d63c1a; /* Colore del pulsante al passaggio del mouse */
+}

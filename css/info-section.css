@@ -1,0 +1,21 @@
+
+/* Info Section */
+.info-section {
+    padding: 50px 20px;
+    background: #f4f4f4;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(30% - 20px);
+    text-align: center;
+}
+.card h2 {
+    margin-bottom: 10px;
+}
